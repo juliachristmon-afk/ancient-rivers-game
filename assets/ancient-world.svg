@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 440" fill="none">
+<defs><linearGradient id="sky" x2="0" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#27589a"/><stop offset=".7" stop-color="#8dc7ce"/><stop offset="1" stop-color="#f6d692"/></linearGradient><linearGradient id="sand" x2="0" y2="440"><stop stop-color="#f1c774"/><stop offset="1" stop-color="#b7793f"/></linearGradient><linearGradient id="river" x2="1" y2="1"><stop stop-color="#70d4dc"/><stop offset="1" stop-color="#267c9c"/></linearGradient><pattern id="brick" width="32" height="19" patternUnits="userSpaceOnUse"><path d="M0 19h32M16 0v19" stroke="#865b38" stroke-opacity=".3"/></pattern></defs>
+<path fill="url(#sky)" d="M0 0h1440v440H0z"/><circle cx="720" cy="205" r="84" fill="#ffdfa0" opacity=".85"/><circle cx="720" cy="205" r="108" stroke="#ffdfa0" stroke-opacity=".2" stroke-width="18"/>
+<g fill="#fff4da" opacity=".35"><path d="M80 67c24-20 43-14 56 0 21-8 36-2 47 10H49c6-8 17-12 31-10ZM1120 81c16-26 51-23 65-6 18-12 46-5 59 13h-151c6-7 17-10 27-7Z"/></g>
+<path d="m0 285 92-65 118 74 118-47 89 44 147-38 118 36 118-89 73 36 126-74 84 61 115-69 96 93 126-46 121 63v156H0Z" fill="#659a8b"/><path d="m0 326 139-54 126 39 120-29 165 41 120-46 113 14 92-40 92 33 173-43 137 61 163-29v167H0Z" fill="#3b7d72"/>
+<path d="M0 364c220-40 350-25 509 2 118 20 232-28 349-29 229-1 364 70 582 18v85H0Z" fill="#dfba76"/><path d="M0 394c241-49 400 2 530 2 172 0 171-53 252-43 79 10 4 36 72 52 134 30 379-40 586 9v26H0Z" fill="url(#river)"/>
+<!-- Egypt -->
+<path d="m70 350 132-220 133 220H70Z" fill="#edc469"/><path d="m202 130 133 220H222Z" fill="#b58243"/><path d="m11 369 87-148 86 148H11Z" fill="#f3d281"/><path d="m98 221 86 148h-74Z" fill="#d29c51"/><path d="m257 368 99-157 106 157H257Z" fill="#edc469"/><path d="m356 211 106 157h-88Z" fill="#b58243"/><path d="m70 350 132-220 133 220H70Z" fill="url(#brick)"/><path d="m257 368 99-157 106 157H257Z" fill="url(#brick)"/>
+<!-- Mesopotamian ziggurat -->
+<path d="M460 369v-28h23v-31h24v-31h26v-34h48v34h26v31h24v31h23v28H460Z" fill="#ce9655"/><path d="M557 245h24v34h26v31h24v31h23v28h-97V245Z" fill="#9e673e"/><path d="M460 341h194m-171-31h148m-124-31h100" stroke="#f0c783" stroke-width="3"/><path d="m546 369 7-90h10l8 90" fill="#efd29a"/>
+<!-- Greek temple -->
+<path d="m662 300 104-56 105 56H662Z" fill="#f4e5b7"/><path d="m686 289 80-43 81 43H686Z" fill="#beae81"/><path d="M672 300h190v12H672zM668 369h199v10H668zM659 379h218v9H659z" fill="#f4e5b7"/>
+<g fill="#e7d6a5" stroke="#fbefca" stroke-width="4"><path d="M684 313h17v54h-17zM722 313h17v54h-17zM760 313h17v54h-17zM798 313h17v54h-17zM836 313h17v54h-17z"/></g>
+<!-- Chinese mountains and winding wall -->
+<path d="m867 281 77-113 82 62 86-113 94 91 90-103 144 161v84H867Z" fill="#316f63"/><path d="m917 292 51-76 61 61 77-90 76 68 77-85 111 102" stroke="#e7c789" stroke-width="15"/><path d="m917 286 51-76 61 61 77-90 76 68 77-85 111 102" stroke="#bf955e" stroke-width="5" stroke-dasharray="7 5"/>
+<path d="M1086 193v-45h8v9h9v-9h9v9h9v-9h8v45h-43ZM1240 183v-43h8v8h9v-8h9v8h9v-8h8v43h-43Z" fill="#e8ca8c"/><path d="M1102 172h11v14h-11zM1256 164h11v14h-11z" fill="#425c51"/>
+<!-- Roman amphitheater -->
+<path d="M1156 364V279c75-24 143-24 217 0v85c-74 24-142 24-217 0Z" fill="#cb875a"/><path d="M1156 279c75-24 143-24 217 0v13c-74-24-142-24-217 0v-13ZM1156 318c75-24 143-24 217 0v6c-74-24-142-24-217 0v-6ZM1156 354c75-24 143-24 217 0v6c-74-24-142-24-217 0v-6Z" fill="#edba83"/>
+<g fill="#774e42"><path d="M1170 310v-10a9 9 0 0 1 18 0v7ZM1203 303v-10a9 9 0 0 1 18 0v7ZM1236 299v-10a9 9 0 0 1 18 0v10ZM1269 299v-10a9 9 0 0 1 18 0v12ZM1302 302v-10a9 9 0 0 1 18 0v15ZM1335 309v-10a9 9 0 0 1 18 0v15ZM1170 348v-11a9 9 0 0 1 18 0v8ZM1203 341v-11a9 9 0 0 1 18 0v8ZM1236 337v-11a9 9 0 0 1 18 0v11ZM1269 337v-11a9 9 0 0 1 18 0v13ZM1302 340v-11a9 9 0 0 1 18 0v16ZM1335 347v-11a9 9 0 0 1 18 0v16Z"/></g>
+<path d="M0 439h1440" stroke="#dfb463" stroke-width="4"/>
+</svg>

@@ -1,4 +1,8 @@
-# Ancient Rivers & Civilizations Challenge
+# Ancient World Learning Arcade
+
+The homepage for **Mrs. Christmon's Ancient Civilizations Class**, featuring a teacher portrait, ancient-world illustrations, and a clear entry point to the complete Ancient Rivers & Civilizations Challenge. The homepage is at the site root; the existing game is at `rivers/`.
+
+## Ancient Rivers & Civilizations Challenge
 
 A colorful, account-free geography and history game for seventh-grade students. Built with plain HTML, CSS, JavaScript, and SVG; no framework, API keys, database, external fonts, or runtime dependencies.
 
@@ -11,7 +15,7 @@ cd /workspace/ancient-rivers-game
 python3 -m http.server 8000 --bind 0.0.0.0
 ```
 
-Use the server’s address in your browser. Any static web host can deploy these four application files: `index.html`, `styles.css`, `data.js`, and `app.js`. No build step is needed. All game assets are local, so gameplay works without external network access after loading the page. Optional source links require internet access. Reloading a hosted page while offline is not guaranteed: this app does not install a service worker.
+Use the server’s address in your browser. Any static web host (including GitHub Pages at a repository subpath) can serve the site. Keep `index.html`, `arcade.css`, `app.js`, `data.js`, `styles.css`, the `assets/` folder, and the `rivers/` folder together at the site root. All links and assets use relative paths; there is no client-side routing fallback to configure. No build step is needed. All game assets are local, so gameplay works without external network access after loading the page. Optional source links require internet access. Reloading a hosted page while offline is not guaranteed: this app does not install a service worker.
 
 ## What students can do
 
@@ -65,15 +69,21 @@ Browser integration tests use Python Playwright and system Chromium. These are *
 With the local server running in another terminal:
 
 ```sh
+python3 tests/homepage.py
 python3 tests/smoke.py
 ```
 
-`GAME_URL` overrides the default test server at `http://127.0.0.1:8000`. The tests exercise a perfect full expedition, all practice modes with correct and incorrect answers, spelling aliases and whitespace, hints, duplicate-score prevention, missed-answer reviews, map keyboard controls, regional map views, navigation confirmation, local score clearing, mobile layouts, blocked browser storage, and offline gameplay after loading. Screenshots are written outside the checkout under `/tmp/ancient-rivers-*.png`.
+`ARCADE_URL` overrides the homepage-test URL (`http://127.0.0.1:8000`). `GAME_URL` overrides the game-test URL (`http://127.0.0.1:8000/rivers`, without a trailing slash). Homepage checks cover portrait loading, game links, field-guide links, return navigation, and widths from 320 to 1440 pixels. The tests exercise a perfect full expedition, all practice modes with correct and incorrect answers, spelling aliases and whitespace, hints, duplicate-score prevention, missed-answer reviews, map keyboard controls, regional map views, navigation confirmation, local score clearing, mobile layouts, blocked browser storage, and offline gameplay after loading. Screenshots are written outside the checkout under `/tmp/ancient-rivers-*.png`.
 
 ## Files
 
-- `index.html`: app shell, metadata, sources and leave-round dialogs.
+- `index.html`: the new class arcade homepage.
+- `arcade.css`: homepage styling, isolated from the game.
+- `assets/`: local teacher portrait and ancient-world SVG illustration.
+- `rivers/index.html`: preserved game shell, sources and leave-round dialogs, with a return link to the arcade.
 - `styles.css`: responsive visual design, SVG map styles, print layout.
 - `data.js`: river facts, answer variants, geographic coordinates, coastlines, and country labels.
 - `app.js`: question generation, navigation, map interaction, scoring, feedback, guide, and results.
 - `tests/smoke.py`: end-to-end Chromium tests.
+
+- `tests/homepage.py`: homepage and navigation integration checks.

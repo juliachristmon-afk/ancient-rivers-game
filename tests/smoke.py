@@ -4,7 +4,7 @@ Requires Python Playwright and system Chromium (no application dependencies).
 import os
 from playwright.sync_api import sync_playwright, expect
 
-BASE = os.environ.get('GAME_URL', 'http://127.0.0.1:8000')
+BASE = os.environ.get('GAME_URL', 'http://127.0.0.1:8000/rivers')
 
 
 def run():

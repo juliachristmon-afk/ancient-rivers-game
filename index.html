@@ -1,27 +1,38 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f6f0">
-  <meta name="description" content="Explore six great rivers, discover ancient civilizations, and test your geography and spelling. A free, account-free challenge for middle school.">
-  <title>Ancient Rivers · The Civilization Challenge</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 40 40%27%3E%3Crect width=%2740%27 height=%2740%27 rx=%279%27 fill=%27%23176d64%27/%3E%3Ctext x=%277%27 y=%2730%27 font-size=%2736%27 fill=%27white%27%3E≈%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
-  <script src="data.js" defer></script>
-  <script src="app.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#112c50">
+  <meta name="description" content="Mrs. Christmon's Ancient Civilizations Class. Explore the ancient world through the Ancient Rivers and Civilizations Challenge. Free, account-free learning for seventh grade.">
+  <title>Ancient World Learning Arcade | Mrs. Christmon's Class</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%23112c50'/%3E%3Ctext x='8' y='29' font-size='28' fill='%23f0cd77'%3E✦%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="arcade.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Ancient Rivers home"><span class="brand-mark" aria-hidden="true">≈</span><span>ANCIENT<span class="brand-bottom">RIVERS</span></span></a>
-    <nav aria-label="Main navigation"><a href="#home" data-nav="home">The challenge</a><a href="#guide" data-nav="guide">Field guide</a><a href="#how" data-nav="how">How to play</a></nav>
-    <span class="header-note"><span class="green-dot"></span>No accounts. Just adventure.</span>
+  <a class="skip-link" href="#main">Skip to the arcade</a>
+  <header class="arcade-header">
+    <a class="arcade-brand" href="./" aria-label="Ancient World Learning Arcade home"><span aria-hidden="true">✦</span><span>ANCIENT WORLD<small>LEARNING ARCADE</small></span></a>
+    <nav aria-label="Main navigation"><a href="#games">Choose a game</a><a href="#welcome">Meet your teacher</a><a class="nav-play" href="rivers/">Play now <span aria-hidden="true">→</span></a></nav>
   </header>
-  <main id="main" tabindex="-1"></main>
-  <footer class="site-footer"><span>Made for curious minds. <span class="footer-wave">≈</span></span><span>6 rivers · 4 skills · A world to discover</span><button class="text-button" id="sources-button">Map & learning sources ↗</button></footer>
-  <dialog id="sources-dialog" aria-labelledby="sources-title"><button class="dialog-close" aria-label="Close sources">×</button><span class="eyebrow">THE EXPLORER’S NOTES</span><h2 id="sources-title">A little context matters.</h2><p>This learning map uses a longitude/latitude projection. Coastlines and river courses are hand-generalized for classroom use, not navigation. Country names mark approximate locations; they are not political boundaries.</p><p>Ancient civilizations did not share today’s country borders. Questions use specific river sections or sites when a river crosses several countries. Dates are approximate.</p><h3>Further reading & fact checking</h3><ul><li><a href="https://www.britannica.com/place/Nile-River" target="_blank" rel="noopener noreferrer">Encyclopaedia Britannica: Nile River</a></li><li><a href="https://www.britannica.com/place/Tigris-Euphrates-river-system" target="_blank" rel="noopener noreferrer">Britannica: Tigris–Euphrates river system</a></li><li><a href="https://www.britannica.com/place/Indus-River" target="_blank" rel="noopener noreferrer">Britannica: Indus River</a></li><li><a href="https://www.britannica.com/place/Yellow-River" target="_blank" rel="noopener noreferrer">Britannica: Yellow River (Huang He)</a></li><li><a href="https://www.britannica.com/place/Yangtze-River" target="_blank" rel="noopener noreferrer">Britannica: Yangtze River</a></li><li><a href="https://www.britannica.com/topic/Indus-civilization" target="_blank" rel="noopener noreferrer">Britannica: Indus civilization</a></li><li><a href="https://www.britannica.com/place/Mesopotamia-historical-region-Asia" target="_blank" rel="noopener noreferrer">Britannica: Mesopotamia</a></li></ul><p class="small">The game itself uses only local files. These optional reading links need internet access.</p></dialog>
-  <dialog id="leave-dialog" aria-labelledby="leave-title"><h2 id="leave-title">Leave this expedition?</h2><p>Your current round will end. Your saved best score will stay on this browser.</p><div class="dialog-actions"><button class="button secondary" id="keep-playing">Keep playing</button><button class="button" id="leave-game">Leave round</button></div></dialog>
-  <noscript><p class="noscript">Please enable JavaScript to play this interactive game. No account or internet connection is required once the files are loaded.</p></noscript>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content"><span class="eyebrow"><span aria-hidden="true">✦</span> YOUR NEXT GREAT DISCOVERY STARTS HERE</span><h1 id="hero-title">Ancient World<br><em>Learning Arcade</em></h1><p class="class-subtitle">Mrs. Christmon's Ancient Civilizations Class</p><p class="hero-description">Big discoveries. Curious minds. A whole ancient world to explore.</p><a class="button gold" href="rivers/">Play Ancient Rivers & Civilizations <span aria-hidden="true">→</span></a><div class="hero-tags"><span>GRADE 7</span><span>No accounts needed</span><span>Learn at your own pace</span></div></div>
+      <div class="landscape" role="img" aria-label="Illustrated ancient-world landmarks: Egyptian pyramids, a Mesopotamian ziggurat, a Greek temple, the Great Wall of China, and a Roman amphitheater."></div>
+      <div class="hero-bottom"><span>GEOGRAPHY</span><span aria-hidden="true">✦</span><span>CIVILIZATIONS</span><span aria-hidden="true">✦</span><span>DISCOVERY</span></div>
+    </section>
+    <section class="welcome content-width" id="welcome" aria-labelledby="welcome-title">
+      <div class="teacher-card"><div class="photo-frame"><img src="assets/mrs-christmon.png" alt="Mrs. Christmon, your ancient civilizations teacher" width="420" height="560"></div><div class="teacher-caption"><strong>Mrs. Christmon</strong><span>Your ancient civilizations teacher</span></div><span class="teacher-star" aria-hidden="true">✦</span></div>
+      <div class="welcome-copy"><span class="eyebrow">WELCOME, EXPLORERS!</span><h2 id="welcome-title">The past is full of stories.<br> <em>Let’s discover them together.</em></h2><p>Welcome to our Ancient World Learning Arcade! Follow mighty rivers, connect ancient civilizations to today’s map, and put your knowledge to the test.</p><p>Choose a challenge, learn something new, and try again as often as you like. Every discovery helps you grow.</p><a class="text-link" href="#games">Find your next adventure <span aria-hidden="true">↓</span></a></div>
+      <div class="compass" aria-hidden="true"><span>N</span><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="35"/><circle cx="50" cy="50" r="28"/><path d="M50 9 58 42 91 50 58 58 50 91 42 58 9 50 42 42Z"/><path class="needle" d="m50 17 7 33-7 33-7-33Z"/><circle cx="50" cy="50" r="4"/></svg></div>
+    </section>
+    <section class="games content-width" id="games" aria-labelledby="games-title">
+      <div class="section-heading"><div><span class="eyebrow">PICK A CHALLENGE. MAKE A DISCOVERY.</span><h2 id="games-title">Your adventure starts here.</h2></div><span class="ready-badge"><span></span> READY TO PLAY</span></div>
+      <article class="featured-game"><div class="game-art" aria-hidden="true"><span class="art-label">THE RIVER EXPEDITION</span><svg viewBox="0 0 480 340"><defs><linearGradient id="artSky" x2="0" y2="1"><stop stop-color="#a8d9dd"/><stop offset="1" stop-color="#ecddb0"/></linearGradient></defs><path fill="url(#artSky)" d="M0 0h480v340H0z"/><circle cx="342" cy="78" r="40" fill="#f9d27b"/><path d="m0 211 114-135 114 135H0Z" fill="#e5b25d"/><path d="m114 76 114 135h-98Z" fill="#bc8348"/><path d="m162 231 97-116 97 116H162Z" fill="#f4ce80"/><path d="m259 115 97 116h-84Z" fill="#d0a45f"/><path d="M0 222c93-29 167-23 233 12 68 35 160-29 247-7v113H0Z" fill="#81a283"/><path d="M292 207c-175 46 133 54-16 90-33 8-54 20-36 43H92c-7-43 52-45 80-59 85-42-50-52 120-74Z" fill="#298d9e"/><path d="M0 287c53-30 93-4 118 53H0ZM480 282c-47-24-77 21-101 58h101Z" fill="#4e826c"/><path d="M39 227v-74m0 0c-16-18-30-16-35-8 13-1 24 4 35 8Zm0 0c4-25 18-36 29-29-12 7-21 17-29 29Zm0 0c19-10 34-4 36 6-14-4-25-6-36-6Z" stroke="#315f53" stroke-width="6" stroke-linejoin="round"/><path d="m354 268 26-63v63h-26Z" fill="#fff0c3"/><path d="M349 272h63l-11 12h-42Z" fill="#855e3e"/><path d="M382 204v70" stroke="#755839" stroke-width="3"/></svg><span class="art-stamp">6 RIVERS<br><strong>ONE GREAT JOURNEY</strong></span></div><div class="game-info"><div class="game-labels"><span class="pill">FEATURED CHALLENGE</span><span class="grade">GRADE 7</span></div><h3>Ancient Rivers &<br>Civilizations Challenge</h3><p>Travel from the Nile to the Yangtze. Find famous rivers, practice their names, meet ancient civilizations, and connect them to modern countries.</p><ul class="game-skills"><li><span aria-hidden="true">⌖</span> River locations</li><li><span aria-hidden="true">Aa</span> Spelling practice</li><li><span aria-hidden="true">▥</span> Ancient civilizations</li><li><span aria-hidden="true">◎</span> Modern countries</li></ul><a class="button navy" href="rivers/">Let’s play the river challenge <span aria-hidden="true">→</span></a><div class="game-details"><span>24-question expedition</span><span>Instant feedback & scoring</span></div></div></article>
+      <div class="quick-links"><a href="rivers/#guide"><span class="quick-icon" aria-hidden="true">▤</span><div><h3>Explore before you play</h3><p>Meet the rivers in the field guide.</p></div><span aria-hidden="true">→</span></a><a href="rivers/#how"><span class="quick-icon" aria-hidden="true">✧</span><div><h3>New to the challenge?</h3><p>See how to play and earn points.</p></div><span aria-hidden="true">→</span></a></div>
+    </section>
+    <section class="discovery-strip content-width"><span class="discovery-icon" aria-hidden="true">✦</span><div><h2>A little curiosity goes a long way.</h2><p>No sign-up. No countdown. Just a world of possibilities.</p></div><a href="rivers/" class="text-link">Start exploring <span aria-hidden="true">→</span></a></section>
+  </main>
+  <footer><a class="arcade-brand" href="./"><span aria-hidden="true">✦</span><span>ANCIENT WORLD<small>LEARNING ARCADE</small></span></a><p>Mrs. Christmon's Ancient Civilizations Class<br><span>Made for curious seventh-grade minds.</span></p><a href="#main">Back to top ↑</a></footer>
 </body>
 </html>
